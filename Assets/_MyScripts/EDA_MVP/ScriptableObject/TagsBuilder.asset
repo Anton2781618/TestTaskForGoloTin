@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c86fa85ec04becf4bb1f680d0fa07eda, type: 3}
+  m_Name: TagsBuilder
+  m_EditorClassIdentifier: 
+  HierarchyTags:
+  - None/None
+  - ForBuilding/ForBuilding
+  - ForPlayer/ForPlayer
+  - ForRaycaster/ForRaycaster
+  - ForSound/ForSound
+  - ForUIWarehouse/ForUIWarehouse
+  - ForWarehouse/ForWarehouse
+  - ForCamera/ForCamera
+  - ForUiBuilding/ForUiBuilding
+  hierarchyBuilder:
+  - NameHierarchy: None
+    HierarchyItemtype:
+    - None
+  - NameHierarchy: ForBuilding
+    HierarchyItemtype:
+    - ForBuilding
+  - NameHierarchy: ForPlayer
+    HierarchyItemtype:
+    - ForPlayer
+  - NameHierarchy: ForRaycaster
+    HierarchyItemtype:
+    - ForRaycaster
+  - NameHierarchy: ForSound
+    HierarchyItemtype:
+    - ForSound
+  - NameHierarchy: ForUIWarehouse
+    HierarchyItemtype:
+    - ForUIWarehouse
+  - NameHierarchy: ForWarehouse
+    HierarchyItemtype:
+    - ForWarehouse
+  - NameHierarchy: ForCamera
+    HierarchyItemtype:
+    - ForCamera
+  - NameHierarchy: ForUiBuilding
+    HierarchyItemtype:
+    - ForUiBuilding
+  ModuleTagPairs:
+  - ModuleReference: CameraManagerModule
+    CompatibleTag: ForCamera/ForCamera
+  - ModuleReference: BuildingModule
+    CompatibleTag: ForBuilding/ForBuilding
+  - ModuleReference: BuildingViewModule
+    CompatibleTag: ForUiBuilding/ForUiBuilding
+  - ModuleReference: SelectedModule
+    CompatibleTag: ForBuilding/ForBuilding
+  - ModuleReference: SpawnerViewModule
+    CompatibleTag: ForBuilding/ForBuilding
+  - ModuleReference: PlayerModule
+    CompatibleTag: ForPlayer/ForPlayer
+  - ModuleReference: SoundModule
+    CompatibleTag: ForSound/ForSound
+  - ModuleReference: UIWarehouse
+    CompatibleTag: ForUIWarehouse/ForUIWarehouse
+  - ModuleReference: WarehouseModule
+    CompatibleTag: ForWarehouse/ForWarehouse
+  - ModuleReference: RaycastModule
+    CompatibleTag: ForRaycaster/ForRaycaster
+  - ModuleReference: DebugModule
+    CompatibleTag: /None
+  - ModuleReference: TestModule
+    CompatibleTag: /None
